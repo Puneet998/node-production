@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Test</title>
+</head>
+<body>
+  <h2>Send Test Email</h2>
+
+  <form action="/send" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <% if (msg) { %>
+    <p><%= msg %></p>
+  <% } %>
+</body>
+</html>
